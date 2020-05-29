@@ -1,39 +1,58 @@
-# debbie-pipeline 
+# DEB ontology
 
-The debbie automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets (and in particular DEB (The Device, Experimental scaffolds and medical Device ontology) and MESH, and deposit the annotated abstracts in a a NoSQL database. The database search page is: debbie.bsc.es/search/. 
+The devices, experimental scaffolds, and biomaterials ontology (DEB) is an open resource for organizing information about biomaterials, their design, manufacture, and biological testing. It was developed using text analysis for identifying ontology terms from a biomaterials [gold standard corpus](gold_standard_set), systematically curated to represent the domain's lexicon. Topics covered were validated by members of the biomaterials research community. The ontology may be used for searching terms, performing annotations for machine learning applications, standardized meta‐data indexing, and other cross‐disciplinary data exploitation. The input of the biomaterials community to this effort to create data‐driven open‐access research tools is encouraged and welcomed. 
 
-## Description 
+## Contributing to the ontology
 
-The pipeline orchestrates the execution of the following components (some of them are in separate repositories of DEBBIE):
-1. Periodic abstract retrieval from PubMed
-2. Standardization of the abstract text
-3. Binary classification (relevant/Non-relevant to biomaterials) using an SVM implementation
-4. Gate-based annotation of the relevant abstracts with terms from the DEB ontology, UNLS semantic types and other manually-selected classes from open ontologies (eg. NPO, NCIT, UBERON) 
-5. Conversion of the resulting gate files to .json and their deposition in the DEBBIE Mongo database
+We strive to make DEB as complete as possible, so suggestions for new terms and improvements are welcome!
 
-## Pipeline (Add image in here)
+Suggesting a new DEB term:
 
-## To Run the pipeline.  Ongoing work 
+1. Check on [Bioportal](https://bioportal.bioontology.org/ontologies/DEB) if the term already exists 
 
-sh INSTALL.sh
+2. Gather as much necessary information as possible: New term label (required) Definition (required) The superclass under which it should appear (required) Where the term has been used (e.g.: a link to an abstract) Synonyms
+
+3. Communicate with the DEB team: Creat an 'issue' using on of the following titles: Suggestion for a term clarifying term definition Adding synonyms Changing the position of a term in the DEB ontology
+
+4. Please create an issue for each proposed change
+
+We welcome contributions from experts in any area of biomaterials, tissue engineeting and medical devices!
+
+## Ontology Map (Add image in here)
 
 ## Built With
 
-* [Docker](https://www.docker.com/) - Docker Containers
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [Protege](protege.stanford.edu) 
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_pipeline/tags). 
+Old versions can be tracked on [Bioportal](https://bioportal.bioontology.org/ontologies/DEB)
 
 ## Authors
 
-* **Javier Corvi** - **Austin McKitrick** - **Osnat Hakimi**
+* **Osnat Hakimi**, **Dmitry Repchevsky**
 
 ## License
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE](LICENSE) file for details
 
+## Citation
+
+``` BibTeX
+@article{doi:10.1002/adfm.201909910,
+	author = {Hakimi, Osnat and Gelpi, Josep Luis and Krallinger, Martin and Curi, Fabio and Repchevsky, Dmitry and Ginebra, Maria-Pau},
+	title = {The Devices, Experimental Scaffolds, and Biomaterials Ontology (DEB): A Tool for Mapping, Annotation, and Analysis of Biomaterials Data},
+	journal = {Advanced Functional Materials},
+	volume = {30},
+	number = {16},
+	pages = {1909910},
+	keywords = {biomaterials, databases, ontology},
+	doi = {10.1002/adfm.201909910},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201909910},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.201909910},
+	year = {2020}
+}
+```
 
 	
 		
