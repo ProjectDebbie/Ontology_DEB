@@ -1,6 +1,6 @@
 # DEB ontology
 
-The devices, experimental scaffolds, and biomaterials ontology (DEB) is an open resource for organizing information about biomaterials, their design, manufacture, and biological testing. It was developed using text analysis for identifying ontology terms from a biomaterials [gold standard corpus](gold_standard_set), systematically curated to represent the domain's lexicon. Topics covered were validated by members of the biomaterials research community. The ontology may be used for searching terms, performing annotations for machine learning applications, standardized meta‐data indexing, and other cross‐disciplinary data exploitation. The input of the biomaterials community to this effort to create data‐driven open‐access research tools is encouraged and welcomed. 
+The devices, experimental scaffolds, and biomaterials ontology (DEB) is an open resource for organizing information about biomaterials, their design, manufacture, and biological testing. It was developed using text analysis for identifying ontology terms from a biomaterials [gold standard corpus](gold_standard_set), systematically curated to represent the domain's lexicon. Topics covered were validated by members of the biomaterials research community. The ontology is in .owl format and may be used for searching terms, performing annotations for machine learning applications, standardized meta‐data indexing, and other cross‐disciplinary data exploitation. 
 
 ## Contributing to the ontology
 
