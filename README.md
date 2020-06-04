@@ -20,7 +20,7 @@ We welcome contributions from experts in any area of biomaterials, tissue engine
 
 ## Ontology Map 
 
-![](Figure3.png)
+![](DEB.png)
 
 ## Built With
 
