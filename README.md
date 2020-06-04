@@ -18,7 +18,9 @@ Suggesting a new DEB term:
 
 We welcome contributions from experts in any area of biomaterials, tissue engineeting and medical devices!
 
-## Ontology Map (Add image in here)
+## Ontology Map 
+
+![](Figure3.png)
 
 ## Built With
 
