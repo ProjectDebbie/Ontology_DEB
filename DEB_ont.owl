@@ -1502,8 +1502,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Anisotropy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
         <dc:description>The property of being anisotropic, having a different value when measured in different directions.</dc:description>
+        <has_alternative_id>ncit:C17442</has_alternative_id>
         <rdfs:seeAlso>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17442</rdfs:seeAlso>
-        <skos:altLabel>ncit:C17442</skos:altLabel>
     </owl:Class>
     
 
@@ -1524,6 +1524,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibacterialEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibacterialEffect">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antibacterial"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibioticEluting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibioticEluting">
@@ -1536,6 +1554,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Antibiotics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antimicrobial"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1576,8 +1612,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess">
         <dc:description>A cellular or biological process that the manufactured object is designed to cause or support, or is measured to affect</dc:description>
-        <rdfs:label>Biological Process</rdfs:label>
-        <skos:altLabel>ncit:C17828</skos:altLabel>
+        <has_alternative_id>ncit:C17828</has_alternative_id>
+        <skos:altLabel>Biological Process</skos:altLabel>
     </owl:Class>
     
 
@@ -1898,8 +1934,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BulkModulus">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+        <has_alternative_id>bcteo:0000123</has_alternative_id>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/ID_0000123</rdfs:seeAlso>
-        <skos:altLabel>bcteo:0000123</skos:altLabel>
     </owl:Class>
     
 
@@ -2583,12 +2619,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#DemineralizedBoneMatrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DemineralizedBoneMatrix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+        <dc:description>Demineralized allograft bone with osteoinductive activity. Demineralized bone matrices are prepared by acid extraction of allograft bone, resulting in loss of most of the mineralized component but retention of collagen and noncollagenous proteins, including growth factors. The efficacy of a demineralized bone matrix (DBM) as a bone-graft substitute or extender may be related to the total amount of bone morphogenetic protein (BMP) present, and the ratios of the different BMPs present. BMPs belong to the transforming growth factor (TGF) superfamily of proteins.</dc:description>
+        <has_alternative_id>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61085</has_alternative_id>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Density -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Density">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+        <has_alternative_id>OPB:00546</has_alternative_id>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/ID_0000009</rdfs:seeAlso>
-        <skos:altLabel>OPB:00546</skos:altLabel>
     </owl:Class>
     
 
@@ -2971,6 +3017,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ForeignBodyResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
+        <skos:altLabel>Foreign body</skos:altLabel>
     </owl:Class>
     
 
@@ -3194,6 +3241,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrogel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Gel"/>
+        <dc:description>A gel which is primarily composed of a network of polymer chains that are hydrophilic, sometimes found as a colloidal gel in which water is the dispersion medium.</dc:description>
+        <has_alternative_id>http://purl.bioontology.org/ontology/SNOMEDCT/303529009</has_alternative_id>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#HydrogelExpander -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#HydrogelExpander">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalImplant"/>
     </owl:Class>
     
 
@@ -3279,6 +3336,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ImplantableCardiovascularDevice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Implantation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Implantation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
     </owl:Class>
     
 
@@ -3530,6 +3595,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialCharacterization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialCharacterization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing">
@@ -3579,9 +3652,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaximumLoad">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateStrength"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+        <has_alternative_id>bcteo:0000173</has_alternative_id>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/ID_0000173</rdfs:seeAlso>
-        <skos:altLabel>LoadToFailure</skos:altLabel>
-        <skos:altLabel>bcteo:0000173</skos:altLabel>
     </owl:Class>
     
 
@@ -3590,8 +3662,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaximumStrain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+        <has_alternative_id>BCTEO:0000174</has_alternative_id>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/ID_0000174</rdfs:seeAlso>
-        <skos:altLabel>BCTEO:0000174</skos:altLabel>
     </owl:Class>
     
 
@@ -3628,7 +3700,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalTextile -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalTextile">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ExperimentalScaffold"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObject"/>
     </owl:Class>
     
 
@@ -4136,6 +4208,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#OsseousAlterations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#OsseousAlterations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconduction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconduction">
@@ -4346,6 +4426,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Particle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Patch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Patch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalImplant"/>
     </owl:Class>
     
 
@@ -4759,6 +4847,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#RepairOfSkull">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalProcedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique">
+        <dc:description>A laboratory or clinical technique used to evaluate a biomaterial (or implant/device) and their effect.</dc:description>
     </owl:Class>
     
 
