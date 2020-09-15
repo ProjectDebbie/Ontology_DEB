@@ -1455,6 +1455,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AdipogenicDifferentiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdipogenicDifferentiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#CellDifferentiation"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Adsorption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adsorption">
@@ -1479,6 +1487,14 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
         <dc:description>An unfavorable or unintended disease, sign, or symptom (including an abnormal laboratory finding) that is temporally associated with the use of a medical device or biomaterial</dc:description>
         <skos:altLabel>Adverse event</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AirwayStent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AirwayStent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
     </owl:Class>
     
 
@@ -1512,6 +1528,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Alloy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <dc:description>mixture of two or more metals or of one or more metals with certain metalloids that are mutually soluble in the molten condition; distinguished as binary, ternary, quaternary, etc., depending on the number of metals in the mixture. [CRISP]</dc:description>
+        <has_alternative_id>http://purl.bioontology.org/ontology/CSP/1852-6667</has_alternative_id>
+        <has_alternative_id>http://purl.obolibrary.org/obo/CHEBI_142648</has_alternative_id>
     </owl:Class>
     
 
@@ -1555,6 +1574,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Annealing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+        <dc:description>A heat treatment that alters the microstructure of a material causing changes in its properties such as strength and hardness</dc:description>
+        <has_alternative_id>http://purl.obolibrary.org/obo/CHMO_0001465</has_alternative_id>
     </owl:Class>
     
 
@@ -1741,6 +1762,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioceramic">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <dc:description>Ceramics with biological functionality.</dc:description>
     </owl:Class>
     
 
@@ -1766,7 +1788,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biocomposite -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biocomposite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Composite"/>
     </owl:Class>
     
 
@@ -1796,6 +1818,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biofabrication">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+        <dc:description>The production of complex biologic products from raw materials such as living cells, matrices, biomaterials, and molecules.</dc:description>
     </owl:Class>
     
 
@@ -1902,6 +1925,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Blend">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <dc:description>A mixture of different substances.</dc:description>
     </owl:Class>
     
 
@@ -1950,6 +1974,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneHealing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneHealing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#BonyIngrowth -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BonyIngrowth">
@@ -1972,6 +2012,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <dc:description>In textiles, machine or hand method of interlacing three or more yarns or bias-cut cloth strips in such a way that they cross one another and are laid together in diagonal formation, forming a narrow strip of flat or tubular fabric.</dc:description>
     </owl:Class>
     
 
@@ -2023,6 +2064,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#CartilageAutograftImplantationSystem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#CartilageInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#CartilageInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury"/>
     </owl:Class>
     
 
@@ -2189,6 +2238,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Ceramic">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <dc:description>Inorganic, nonmetallic solid prepared by the action of heat and subsequent cooling. [BCTEO]</dc:description>
+        <has_alternative_id>http://purl.bioontology.org/ontology/SNOMEDCT/261253002</has_alternative_id>
     </owl:Class>
     
 
@@ -2292,6 +2343,16 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <dc:description>The application of a thin cover to a material. [CHMO]</dc:description>
+        <has_alternative_id>http://purl.allotrope.org/ontologies/process#AFP_0001986</has_alternative_id>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#CoaxialElectrospinning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#CoaxialElectrospinning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospinning"/>
     </owl:Class>
     
 
@@ -2358,6 +2419,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Composite">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
+        <dc:description>Materials made from two or more constituent materials with significantly different physical or chemical properties, that when combined, produce a material with characteristics different from the individual components. The individual components remain separate and distinct within the finished structure. [BCTEO]</dc:description>
+        <has_alternative_id>http://purl.obolibrary.org/obo/ID_0000154</has_alternative_id>
     </owl:Class>
     
 
@@ -2493,6 +2556,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <dc:description>The use of cross-links to promote a change in polymers&apos; physical properties.</dc:description>
     </owl:Class>
     
 
@@ -2622,6 +2686,18 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <dc:description>The physical, chemical and/or enzymatic processing of tissue samples to remove cells and leave behind the extracellular matrix or natural scaffold made up of collagen and other fibers and proteins. [NCIT]</dc:description>
+        <has_alternative_id>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112947</has_alternative_id>
+        <skos:altLabel>Tissue Decellularization</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#DecellularizedExtracellularMatrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DecellularizedExtracellularMatrix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
+        <skos:altLabel>dECM</skos:altLabel>
     </owl:Class>
     
 
@@ -2819,6 +2895,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <dc:description>A process used to created very fine (μm or nm scale) fibres from a liquid. A high voltage is applied to a droplet of the liquid sample which is drawn out into fibres and cooled in air.</dc:description>
+        <has_alternative_id>http://purl.obolibrary.org/obo/CHMO_0001620</has_alternative_id>
     </owl:Class>
     
 
@@ -2976,6 +3054,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#FiberAlignment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#FiberDiameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#FiberDiameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Diameter"/>
     </owl:Class>
     
 
@@ -3502,7 +3588,17 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Impregnating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Impregnating">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#impregnated"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:label>Impregnating</rdfs:label>
         <skos:altLabel>Impregnation</skos:altLabel>
     </owl:Class>
@@ -3533,6 +3629,14 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
         <skos:altLabel>Inflammation</skos:altLabel>
         <skos:altLabel>inflammatory response</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
     </owl:Class>
     
 
@@ -3971,6 +4075,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microgroove -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microgroove">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Groove"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microgrooved"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microparticle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microparticle">
@@ -4123,6 +4245,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MyogenicDifferentiation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#CellDifferentiation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanobiocomposite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanobiocomposite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Composite"/>
+        <dc:description>Biopolymers formulated and associated with nano-sized fillers, bringing a large range of improved properties (stiffness, permeability, crystallinity, thermal stability).</dc:description>
     </owl:Class>
     
 
@@ -4340,6 +4471,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#NonToxic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#NonToxic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#NonWoven -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#NonWoven">
@@ -4403,7 +4542,17 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconductivity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconductivity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteoconductive"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:label>Osteoconductivity</rdfs:label>
         <skos:altLabel>Osteoconduction</skos:altLabel>
     </owl:Class>
@@ -4498,10 +4647,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PLGA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PLGA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
+        <skos:altLabel>Poly D,L lactic co glycolic acid</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PLLA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PLLA">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
+        <skos:altLabel>Poly-L-lactic-acid</skos:altLabel>
+        <skos:altLabel>Poly-L-lactide</skos:altLabel>
     </owl:Class>
     
 
@@ -4721,7 +4881,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Polylacticacid">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
         <skos:altLabel>PLA</skos:altLabel>
+        <skos:altLabel>Poly lactic acid</skos:altLabel>
         <skos:altLabel>poly(d,l-lactic acid)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Polylevolactide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Polylevolactide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
     </owl:Class>
     
 
@@ -4839,6 +5008,14 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PreClinicalStudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PreClinicalStudy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#StudyType"/>
     </owl:Class>
     
 
@@ -5256,6 +5433,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Siderophore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Siderophore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+        <has_alternative_id>CHEBI:26672</has_alternative_id>
+        <has_alternative_id>http://purl.obolibrary.org/obo/CHEBI_26672</has_alternative_id>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Silk -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Silk">
@@ -5319,6 +5506,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Sol-gel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+        <dc:description>The process of the settling of (nm sized) particles from a colloidal suspension onto a pre-existing surface, resulting in ceramic materials. The desired solid particles (e.g. metal alkoxides) are suspended in a liquid, forming the &apos;sol&apos;, which is deposited on a substrate by spinning, dipping or coating, or transferred to a mould. The particles in the sol are polymerised by partial evaporation of the solvent, or addition of an initiator, forming the &apos;gel&apos;, which is then heated at high temperature to give the final solid product.</dc:description>
+        <has_alternative_id>http://purl.obolibrary.org/obo/CHMO_0001313</has_alternative_id>
+        <skos:altLabel>sol–gel method</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#SolventCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#SolventCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Casting"/>
     </owl:Class>
     
 
@@ -5577,6 +5775,14 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ThermalBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ThermalBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
     </owl:Class>
     
 
@@ -5889,6 +6095,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructure">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructured"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#osteogenicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteogenicity">
@@ -5919,6 +6143,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <skos:altLabel>Three dimensional printing</skos:altLabel>
     </owl:Class>
     
 
@@ -5937,6 +6162,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(glycolide:lactide)">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
         <skos:altLabel>PLGA</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(vinyl_alcohol) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(vinyl_alcohol)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
+        <skos:altLabel>PVA</skos:altLabel>
+        <skos:altLabel>Poly vinyl alcohol</skos:altLabel>
     </owl:Class>
     
 
