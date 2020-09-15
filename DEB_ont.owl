@@ -1398,16 +1398,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Absorption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Absorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#absorbable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#absorbable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1416,16 +1412,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Acellularity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Acellularity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#OtherFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#OtherFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#acellular"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#acellular"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1466,16 +1458,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Adsorption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adsorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#adsorbed"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#adsorbed"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1591,16 +1579,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibacterialEffect -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntibacterialEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antibacterial"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antibacterial"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1625,16 +1609,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AntimicrobialEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antimicrobial"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#antimicrobial"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1743,16 +1723,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioactivity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioactivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#bioactive"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#bioactive"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1770,16 +1746,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biocompatibility -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biocompatibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biocompatible"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biocompatible"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1796,16 +1768,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biodegradability -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biodegradability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biodegradable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biodegradable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Bioabsorbable</skos:altLabel>
         <skos:altLabel>Biodegradation</skos:altLabel>
@@ -1826,16 +1794,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biofunctionalization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biofunctionalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Functionalization"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Functionalization"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biofunctional"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#biofunctional"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1882,6 +1846,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType">
         <dc:description>Classification or nature of biomaterials</dc:description>
+        <has_alternative_id></has_alternative_id>
         <rdfs:label>Biomaterial Type</rdfs:label>
     </owl:Class>
     
@@ -1890,16 +1855,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomineralization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomineralization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#mineralized"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#mineralized"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1933,16 +1894,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Blending -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Blending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#blended"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#blended"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -2001,16 +1958,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Braiding -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Braiding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#braided"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#braided"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>In textiles, machine or hand method of interlacing three or more yarns or bias-cut cloth strips in such a way that they cross one another and are laid together in diagonal formation, forming a narrow strip of flat or tubular fabric.</dc:description>
     </owl:Class>
@@ -2332,16 +2285,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#coated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#coated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>The application of a thin cover to a material. [CHMO]</dc:description>
         <has_alternative_id>http://purl.allotrope.org/ontologies/process#AFP_0001986</has_alternative_id>
@@ -2460,16 +2409,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Conditioning -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Conditioning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#conditioned"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#conditioned"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -2478,16 +2423,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Conductivity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Conductivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#conductive"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#conductive"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -2545,16 +2486,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#crosslinked"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#crosslinked"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>The use of cross-links to promote a change in polymers&apos; physical properties.</dc:description>
     </owl:Class>
@@ -2639,16 +2576,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cytocompatibility -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cytocompatibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#cytocompatible"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#cytocompatible"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -2657,16 +2590,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cytotoxicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cytotoxicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#cytotoxic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#cytotoxic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -2675,16 +2604,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Decellularization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Decellularization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#decellularized"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#decellularized"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>The physical, chemical and/or enzymatic processing of tissue samples to remove cells and leave behind the extracellular matrix or natural scaffold made up of collagen and other fibers and proteins. [NCIT]</dc:description>
         <has_alternative_id>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112947</has_alternative_id>
@@ -2721,16 +2646,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Degradability -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Degradability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#degradable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#degradable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Degradation</skos:altLabel>
     </owl:Class>
@@ -2884,16 +2805,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospinning -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospinning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#electrospun"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#electrospun"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>A process used to created very fine (μm or nm scale) fibres from a liquid. A high voltage is applied to a droplet of the liquid sample which is drawn out into fibres and cooled in air.</dc:description>
         <has_alternative_id>http://purl.obolibrary.org/obo/CHMO_0001620</has_alternative_id>
@@ -2968,16 +2885,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Etching -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Etching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#etched"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#etched"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3006,16 +2919,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Extrusion -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Extrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#extruded"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#extruded"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3032,16 +2941,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#fibrous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#fibrous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Fibers</skos:altLabel>
         <skos:altLabel>Fibre</skos:altLabel>
@@ -3117,16 +3022,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Flexibility -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Flexibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#flexible"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#flexible"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3143,16 +3044,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Foaming -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Foaming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#foamed"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#foamed"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3212,16 +3109,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Functionalization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Functionalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#funcionalized"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#funcionalized"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3310,16 +3203,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Groove -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Groove">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#StructuralDetails"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#StructuralDetails"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#grooved"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#grooved"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>grooved</skos:altLabel>
     </owl:Class>
@@ -3421,16 +3310,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydration -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3457,16 +3342,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophilicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophilicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophilic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophilic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3475,16 +3356,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophobicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophobicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophobic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophobic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3544,16 +3421,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Impermeability -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Impermeability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#impermeable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#impermeable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3588,16 +3461,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Impregnating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Impregnating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#impregnated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#impregnated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Impregnating</rdfs:label>
         <skos:altLabel>Impregnation</skos:altLabel>
@@ -3669,16 +3538,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Knitting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Knitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#knitted"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#knitted"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3767,16 +3632,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Macropore -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Macropore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Pore"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Pore"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#macroporous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#macroporous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3785,16 +3646,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Macroporosity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Macroporosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#macroporous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#macroporous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Has a pore size of at least 50nm</dc:description>
     </owl:Class>
@@ -3990,16 +3847,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesoporosity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesoporosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#mesoporous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#mesoporous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Has a pore size between 2-50 nm</dc:description>
     </owl:Class>
@@ -4009,16 +3862,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Metal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#metallic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#metallic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4044,16 +3893,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microfiber">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microfibre"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microfibrous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microfibrous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4078,16 +3923,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microgroove -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microgroove">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Groove"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Groove"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microgrooved"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microgrooved"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4104,16 +3945,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microporosity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microporosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microporous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microporous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Has a pore size of up to 2 nm</dc:description>
     </owl:Class>
@@ -4131,16 +3968,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microtexture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microtexture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Texture"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Texture"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microtextured"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#microtextured"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4149,16 +3982,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Milling -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Milling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#milled"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#milled"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4310,16 +4139,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanofibre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanofibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Fiber"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanofibrous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanofibrous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4490,16 +4315,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nonabsorbable -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nonabsorbable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#permanent"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#permanent"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Non-degradable</skos:altLabel>
         <skos:altLabel>Nondegradable</skos:altLabel>
@@ -4542,16 +4363,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconductivity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconductivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteoconductive"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteoconductive"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Osteoconductivity</rdfs:label>
         <skos:altLabel>Osteoconduction</skos:altLabel>
@@ -4562,16 +4379,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteogenesis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteogenesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteogenic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteogenic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4597,16 +4410,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoinduction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoinduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteoinductive"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#osteoinductive"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>osteoinductivity</skos:altLabel>
     </owl:Class>
@@ -4702,16 +4511,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Perforation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Perforation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#perforated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#perforated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4728,16 +4533,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocrosslinking -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocrosslinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#photocrosslinked"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#photocrosslinked"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4763,16 +4564,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PlasmaTreatment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PlasmaTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#plasma_treated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#plasma_treated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4790,16 +4587,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Polishing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Polishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polished"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polished"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4906,16 +4699,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Polymer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Polymer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiomaterialType"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polymeric"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polymeric"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Polymers</skos:altLabel>
         <skos:altLabel>polymeric</skos:altLabel>
@@ -4926,16 +4715,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Polymerization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Polymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polymerized"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#polymerized"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4970,16 +4755,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#porous"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#porous"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Porosity</rdfs:label>
     </owl:Class>
@@ -4997,16 +4778,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Powder -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#powdered"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#powdered"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5023,16 +4800,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Precoating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Precoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#precoated"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#precoated"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5041,16 +4814,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Preconditioning -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Preconditioning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#preconditioned"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#preconditioned"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5165,16 +4934,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Reinforcement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Reinforcement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#reinforced"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#reinforced"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5208,16 +4973,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Resorption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Resorption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#resorbable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#resorbable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5291,16 +5052,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Roughening -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Roughening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#roughened"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#roughened"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5309,16 +5066,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Sandblasting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Sandblasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#sandblasted"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#sandblasted"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5369,16 +5122,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Semipermeablity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Semipermeablity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#semipermeable"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#semipermeable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>semi-permeable</skos:altLabel>
     </owl:Class>
@@ -5454,16 +5203,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Sintering -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Sintering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#sintered"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#sintered"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5556,16 +5301,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Sponge -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Sponge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#spongy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#spongy"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5648,16 +5389,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#SurfaceHydrophilicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#SurfaceHydrophilicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophilic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#hydrophilic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5764,16 +5501,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Texture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Texture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#textured"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#textured"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -5903,16 +5636,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Toxicity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Toxicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#toxic"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#toxic"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -6006,16 +5735,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Weaving -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Weaving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#woven"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#woven"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -6080,16 +5805,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#bioprinting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#bioprinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Printing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Printing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#bioprinted"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#bioprinted"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -6098,16 +5819,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructured"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructured"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -6132,16 +5849,12 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#3DPrinting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#3DPrinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Printing"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Printing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#3D_printed"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#3D_printed"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <skos:altLabel>Three dimensional printing</skos:altLabel>
     </owl:Class>
