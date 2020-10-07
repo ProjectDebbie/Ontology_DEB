@@ -35,6 +35,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/definition"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
@@ -754,6 +760,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObjectComponent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#lyophilized -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#lyophilized"/>
     
 
 
@@ -1644,6 +1656,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialConduits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialConduits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+        <has_alternative_id>http://purl.bioontology.org/ontology/SNOMEDCT/257281002</has_alternative_id>
+        <skos:altLabel>A nerve guidance conduit</skos:altLabel>
+        <skos:altLabel>Conduit</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialLigament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialLigament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObject"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialOrgans -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ArtificialOrgans">
@@ -1655,7 +1686,8 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess">
-        <dc:description>A cellular or biological process that the manufactured object is designed to cause or support, or is measured to affect</dc:description>
+        <dc:definition>A cellular or biological process that the manufactured object is designed to cause or support, or is measured to affect</dc:definition>
+        <database_cross_reference></database_cross_reference>
         <has_alternative_id>ncit:C17828</has_alternative_id>
         <skos:altLabel>Biological Process</skos:altLabel>
     </owl:Class>
@@ -1824,7 +1856,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance">
-        <dc:description>Substance, often a peptide or protein included in a manufactured object in order to impart a biological activity</dc:description>
+        <dc:definition>Substance, often a peptide or protein included in a manufactured object in order to impart a biological activity</dc:definition>
         <has_alternative_id>STY: T123</has_alternative_id>
         <rdfs:label>Biologically Active Substance</rdfs:label>
     </owl:Class>
@@ -1834,7 +1866,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial">
-        <dc:description>A non-drug raw material or substance suitable for inclusion in systems which augment or replace the function of bodily tissues or organs</dc:description>
+        <dc:definition>A non-drug raw material or substance suitable for inclusion in systems which augment or replace the function of bodily tissues or organs</dc:definition>
         <has_obo_namespace>bcteo</has_obo_namespace>
         <rdfs:label>Biomaterial</rdfs:label>
         <skos:altLabel>Biomaterials</skos:altLabel>
@@ -1878,6 +1910,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biostimulatory">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Biphasic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biphasic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#OtherFeatures"/>
+        <dc:definition>Occurring in or characterized by two stages or phases.</dc:definition>
+        <has_alternative_id>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25435</has_alternative_id>
     </owl:Class>
     
 
@@ -2131,6 +2173,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#CellSheet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObjectComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#CellSignaling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#CellSignaling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AssociatedBiologicalProcess"/>
     </owl:Class>
     
 
@@ -2514,6 +2564,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryogelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryogelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Gelation"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryomilling -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryomilling">
@@ -2701,6 +2759,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#DendriticElastinLikePeptides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DendriticElastinLikePeptides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+        <skos:altLabel>Dendritic ELPs</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Density -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Density">
@@ -2798,6 +2865,14 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem">
         <dc:description>Biological effect associated with manufactured object in a specific test system (cells, tissue or organism)</dc:description>
         <rdfs:label>Effect on Biological System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Elasticty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Elasticty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
     </owl:Class>
     
 
@@ -3120,6 +3195,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#GFOGER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#GFOGER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Gel -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Gel">
@@ -3286,6 +3369,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#HistologicalExamination">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique"/>
+        <skos:altLabel>Histological evaluation</skos:altLabel>
     </owl:Class>
     
 
@@ -3388,6 +3472,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Immobilization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Immunogenicty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Immunogenicty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
     </owl:Class>
     
 
@@ -3621,6 +3713,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Lyophilization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Lyophilization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#lyophilized"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MacrophageFunctionalPolarization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MacrophageFunctionalPolarization">
@@ -3792,6 +3898,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalStability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalStability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication">
@@ -3885,6 +3999,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microcarrier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MicrocomputedTomography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MicrocomputedTomography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique"/>
     </owl:Class>
     
 
@@ -4150,6 +4272,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanohydorxyapatite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanohydorxyapatite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydroxyapatite"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanohydroxyapetite -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanohydroxyapetite">
@@ -4195,6 +4325,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanotopography">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
+        <skos:altLabel>Nanoscale topography</skos:altLabel>
     </owl:Class>
     
 
@@ -4235,6 +4366,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Necrosis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#NeedledFelt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#NeedledFelt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
     </owl:Class>
     
 
@@ -4332,6 +4471,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#NosocomialInfection">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Opaque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Opaque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
     </owl:Class>
     
 
@@ -4500,6 +4647,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Pellet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Pellet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PepsinTreatment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PepsinTreatment">
@@ -4522,10 +4677,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PeriodontalDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PeriodontalDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueDefect"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PeriodontalSurgery -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PeriodontalSurgery">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalProcedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PharmacokineticAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PharmacokineticAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique"/>
     </owl:Class>
     
 
@@ -4540,6 +4711,22 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocurable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocurable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#OtherFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocuring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Photocuring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
     </owl:Class>
     
 
@@ -4571,6 +4758,15 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PlateletDerivedGrowthFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PlateletDerivedGrowthFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance"/>
+        <skos:altLabel>PDGF</skos:altLabel>
     </owl:Class>
     
 
@@ -4923,6 +5119,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#RecombinantHumanPlateletDerivedGrowthFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#RecombinantHumanPlateletDerivedGrowthFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PlateletDerivedGrowthFactor"/>
+        <skos:altLabel>rhPDGF</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Regeneration -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Regeneration">
@@ -5059,6 +5264,14 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#SaltLeaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#SaltLeaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
     </owl:Class>
     
 
@@ -5486,6 +5699,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#TensileStrength">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateStrength"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MechanicalProperty"/>
+        <skos:altLabel>Mechanical strength</skos:altLabel>
     </owl:Class>
     
 
@@ -5584,6 +5798,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueIntegration -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueIntegration">
@@ -5643,6 +5865,15 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Transparent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Transparent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
+        <skos:altLabel>Transparancy</skos:altLabel>
     </owl:Class>
     
 
@@ -5732,6 +5963,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#WaterContactAngle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WaterContactAngle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#WearResistace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WearResistace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Weaving -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Weaving">
@@ -5773,7 +6020,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundDressing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundDressing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundRepair"/>
     </owl:Class>
     
 
@@ -5782,6 +6029,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundHealing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Regeneration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundRepair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundRepair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
     </owl:Class>
     
 
