@@ -1451,6 +1451,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Adhesive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adhesive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObject"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Adipogenesis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adipogenesis">
@@ -1494,7 +1502,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#AirwayStent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#AirwayStent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Stent"/>
     </owl:Class>
     
 
@@ -1644,6 +1652,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ArchitecturalOrganization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObjectFeatures"/>
+        <dc:definition>Characteristics related to the three dimensional organization, orientation and assembly of a manufactured object or its components.</dc:definition>
     </owl:Class>
     
 
@@ -1762,6 +1771,14 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioadhesive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioadhesive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adhesive"/>
     </owl:Class>
     
 
@@ -1968,7 +1985,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneCement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneCement">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cement"/>
     </owl:Class>
     
 
@@ -2232,7 +2249,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cement">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObject"/>
     </owl:Class>
     
 
@@ -2559,7 +2576,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryogel -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryogel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Gel"/>
     </owl:Class>
     
 
@@ -2720,6 +2737,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObjectFeatures"/>
+        <dc:definition>A process or characteristic related to the long term integrity of a manufactured object or its component.</dc:definition>
         <rdfs:label>Degradation Features</rdfs:label>
     </owl:Class>
     
@@ -2805,7 +2823,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Disk -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Disk">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Shape"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
     </owl:Class>
     
 
@@ -3141,7 +3159,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#ForeignBodyReaction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#ForeignBodyReaction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#EffectOnBiologicalSystem"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
     </owl:Class>
     
 
@@ -3270,7 +3288,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Glue -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Glue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Adhesive"/>
     </owl:Class>
     
 
@@ -3311,6 +3329,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Headache">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#HeartValve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#HeartValve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Valve"/>
     </owl:Class>
     
 
@@ -3942,14 +3968,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#MeniscalScaffold -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#MeniscalScaffold">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ExperimentalScaffold"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesh -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesh">
@@ -4059,7 +4077,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Microparticle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Microparticle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Particle"/>
     </owl:Class>
     
 
@@ -4292,7 +4310,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanoparticle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanoparticle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Structure"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Particle"/>
     </owl:Class>
     
 
@@ -4625,7 +4643,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#PMMA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#PMMA">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneCement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial"/>
         <has_alternative_id>http://purl.bioontology.org/ontology/SNOMEDCT/6043006</has_alternative_id>
     </owl:Class>
     
@@ -5359,6 +5377,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Shape">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#ManufacturedObjectFeatures"/>
+        <dc:definition>The external form, contours, or outline of a manufactured object or a component</dc:definition>
     </owl:Class>
     
 
@@ -5537,6 +5556,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Sputtering">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MaterialProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Stent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Stent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
     </owl:Class>
     
 
@@ -5806,6 +5833,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueEngineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalApplication"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueIntegration -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueIntegration">
@@ -5945,6 +5980,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Valve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Valve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalDevice"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#Vascularization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#Vascularization">
@@ -6020,6 +6063,7 @@
     <!-- http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundDressing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundDressing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalTextile"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundRepair"/>
     </owl:Class>
     
