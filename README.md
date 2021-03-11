@@ -40,7 +40,7 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see th
 
 ## Funding
 
-![](eu_emblem.png)
+![](eu_emblem.png){:height="50%" width="50%"}
 
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 751277
 
